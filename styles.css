@@ -26,6 +26,7 @@ span {
 }
 
 #gameboard {
+  position: relative;
   width: 560px;
   height: 560px;
   display: flex;
@@ -81,6 +82,18 @@ path {
 
 .White {
   fill: white;
+}
+
+#info-display {
+  position: absolute;
+  top:40%;
+  text-align: center;
+  backdrop-filter: grayscale(90%) blur(10px);
+  width: 100%;
+  color: white;
+  font-size: 3vw;
+  z-index: 99;
+  
 }
 
 @media screen and (max-width: 600px) {
